@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hex {
+            margin: 0 auto;
+            width: 200px;
+            height: 60px;
+            background: radial-gradient(circle at 20% 0%, white 0, #f5ba5c 100%);
+            transform: skew(8deg);
+            position: relative;
+            cursor: pointer;
+
+        }
+
+        .hex::before,
+        .hex::after {
+            content: '';
+            position: absolute;
+            width: 0;
+
+        }
+
+        .hex::before {
+            right: 99.8888888%;
+            border-top: calc(60px*2/5) solid transparent;
+            border-right: 20px solid #feeed5;
+            border-bottom: calc(60px*3/5) solid transparent;
+        }
+
+        .hex::after {
+            left: 99.8888888%;
+            border-top: calc(60px*3/5) solid transparent;
+            border-left: 20px solid #f5ba5c;
+            border-bottom: calc(60px*2/5) solid transparent;
+        }
+    </style>
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap.min.css'
+        integrity='sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg=='
+        crossorigin='anonymous' />
+
+</head>
+
+<body>
+
+
+
+
+    <div class="hex">
+
+    </div>
+
+
+
+
+
+    <!-- 
+    <script src="./day4/promise.js"></script> -->
+    <!-- <script src="./day4/fetch.js"></script> -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./day4/sweetalert.js"></script>
+
+
+</body>
+
+</html>
